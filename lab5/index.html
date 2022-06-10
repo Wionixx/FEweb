@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Чалий М.В. ІА-94, Lab5, 57</title>
+   <meta name="description" content="Labs">
+   <meta name="keywords" content="HTML, CSS, JavaScript">
+ </head>
+ <body>
+  <h2>Чалий Максим Вікторович</h2>
+  <h4>Місце народження:7 квітня, 2002 року, м.Київ</h4>
+  <h4>НТУУ КПІ, м.Київ</h4>
+  <h4 id="h4">Хоббі: </h4>
+  <ul id="ul">
+  <li>Нумізматика</li>
+  <li>Спорт</li>
+  <li>Рибалка</li>
+  </ul>
+  <h4 id="h4">Улюблені фільми:</h4>
+  <ol id="ol">
+    <li>"Карты,деньги,два ствола"</li>
+    <li>"Бойцовский клуб"</li>
+    <li>"Интерстеллар"</li>
+  </ol>
+  <p>Львів — місто обласного значення в Україні, адміністративний центр Львівської області, Львівської агломерації, Львівського району, Львівської міської громади, національно-культурний та освітньо-науковий осередок країни, великий промисловий центр і транспортний вузол, вважається столицею Галичини та центром Західної України. За кількістю населення — сьоме місто країни (717 655 станом на 1 грудня 2021 року).</p>
+<div id="screen">
+  <img src="lviv.jpg" height="300" id="image">
+</div>
+<button id="but1">Видалити</button>
+<button id="but2">Збільшити</button>
+<button id="but3">Зменшити</button>
+<script>
+  but1.onclick = function () {
+      var img = document.getElementById('screen');
+      img.innerHTML = "";
+  }
+
+  but2.onclick = function () {
+     var img = document.getElementById('image');
+     img.style.height = '500px';
+     img.style.width= '500px';
+  }
+
+  but3.onclick = function () {
+     var img = document.getElementById('image');
+     img.style.height = '100px';
+     img.style.width= '100px';
+  }
+</script>
+
+
+
+  <script>
+  var h = document.getElementById('h4');
+  var ul = document.querySelectorAll('ul')[0];
+  var ol = document.getElementById('ol');
+
+  h.addEventListener("click", function(){
+    this.style.color = (this.style.color == 'black') ? 'white' : 'black';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'yellow';
+        this.style.backgroundColor = (this.style.backgroundColor == 'yellow') ? 'blue' : 'yellow';
+  })
+
+  ul.addEventListener("click", function(){
+    this.style.color = (this.style.color == 'black') ? 'white' : 'black';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'yellow';
+        this.style.backgroundColor = (this.style.backgroundColor == 'yellow') ? 'blue' : 'yellow';
+  })
+
+  ol.addEventListener("click", function(){
+    if(this.style.color == '')
+      this.style.backgroundColor = 'white';
+        this.style.color = (this.style.color == 'white') ? 'red' : 'white';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'green';
+        this.style.backgroundColor = (this.style.backgroundColor == 'green') ? 'white' : 'green';
+  })
+  </script>
+
+
+
+ </body>
+
+</html>
