@@ -1,0 +1,23 @@
+.tab {
+  padding: 10px;
+}
+
+td {
+  border: solid 0.5px;
+  border-color: black;
+  padding: 10px;
+}
+
+#td7:hover {
+  background-color: pink;
+}
+
+table th {
+   background-color: lightblue;
+ }
+.hover_Row {
+   background-color: yellow;
+}
+  .clicked_Row {
+     background-color: lightgreen;
+}

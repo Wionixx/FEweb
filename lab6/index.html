@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <title>Lab6</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="h1">Впишіть дані</h1>
+
+    <form id="form">
+      <div class="form-group">
+        <label for="name">ПІБ</label>
+        <input type="text" id="name" placeholder="ПІБ" required minlength="3" maxlength="100" />
+      </div>
+
+      <div class="form-group">
+        <label for="group">Група</label>
+        <input type="text" id="group" placeholder="Номер групи">
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Телефон</label>
+        <input type="number" id="tel" placeholder="Телефон" required name="number" />
+      </div>
+
+      <div class="form-group">
+        <label for="website">IDcard</label>
+        <input type="text" id="idcard" placeholder="ID-card" required name="number" />
+      </div>
+
+      <div class="form-group">
+        <label for="faculty">Факультет</label>
+        <input type="text" id="faculty" placeholder="Факультет"/>
+      </div>
+
+      <button id="say">Зареєструватися</button>
+
+    </form>
+
+    <div class="message-container">
+      <h3 id="message">Заповніть усі поля</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
